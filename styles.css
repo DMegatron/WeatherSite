@@ -36,8 +36,9 @@ body {
     height: 60px;
     border-radius: 30px;
     flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    margin-right: 1%; /* Adjust margin to create some space between input and button */
+    font-size: 3vw; /* Use relative font size */
+    max-width: 70%; /* Limit maximum width of the input field */
 }
 
 .search button {
@@ -45,13 +46,14 @@ body {
     outline: 0;
     background: #ebfffc;
     border-radius: 50px;
-    width: 60px;
-    height: 50px;
+    width: 12%; /* Use relative width */
+    height: auto; /* Automatically adjust height based on content */
     cursor: pointer;
 }
 
 .search button img {
-    width: 20px;
+    width: 70%; /* Use relative width */
+    height: auto; /* Automatically adjust height based on content */
 }
 
 
