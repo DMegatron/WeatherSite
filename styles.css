@@ -142,6 +142,8 @@ body {
         /* flex-direction: column;  */
         /* align-items: center; */
         margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .weather h1 {
