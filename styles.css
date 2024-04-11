@@ -106,15 +106,15 @@ body {
     display: none;
 }
 
-@media (min-width: 700px) and (max-width: 1080px) {
+@media (min-width: 700px) and (max-width: 1081px) {
     .tile {
         padding: 20px;
     }
 
-    .search {
-        flex-direction: column;
+    .search {
         align-items: center;
         display: flex;
+        flex-direction: column;
     }
 
     .search input {
@@ -139,7 +139,7 @@ body {
 
     .details {
         /* flex-direction: column;  */
-        /* align-items: center; */
+        align-items: center;
         margin-top: 30px;
         display: flex;
         justify-content: space-between;
