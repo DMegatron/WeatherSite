@@ -23,7 +23,6 @@ body {
 .search {
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -107,7 +106,7 @@ body {
     display: none;
 }
 
-@media (max-width: 3000px) {
+@media (min-width: 700px) and (max-width: 1080px) {
     .tile {
         padding: 20px;
     }
