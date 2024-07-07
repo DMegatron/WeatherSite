@@ -48,7 +48,11 @@ async function weatherInfo(city) {
     };
 }
 
-
+     document.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    weatherInfo(searchBar.value);
+                }
 
 searchBtn.addEventListener("click", () => {
     weatherInfo(searchBar.value);
