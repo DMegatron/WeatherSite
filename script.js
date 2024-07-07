@@ -7,11 +7,6 @@ const weatherIcon = document.querySelector(".weather-icon");
 
 async function weatherInfo(city) {
     const response = await fetch(apiLink + city + `&appid=${apiKey}`);
-    document.addEventListener('keydown', function(event) {
-                if (event.key === 'Enter') {
-                    event.preventDefault();
-                    response = await fetch(apiLink + city + `&appid=${apiKey}`);
-                }
     var data = await response.json();
 
 
@@ -53,7 +48,11 @@ async function weatherInfo(city) {
     };
 }
 
-     
+searchBar.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        weatherInfo(searchBar.value);
+    }
+});
 
 searchBtn.addEventListener("click", () => {
     weatherInfo(searchBar.value);
